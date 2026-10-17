@@ -68,12 +68,12 @@ You can use your own Virtual Piano sheet text and save sheets in the built-in li
 ### Adding a Sheet
 
 1. Find a Virtual Piano sheet you want to play.
-2. Copy its sheet notation.
-3. Open the Autoplayer and use its sheet controls to add or save the sheet.
-4. Give it a name so you can find it later.
-5. Select your saved sheet when you're ready to play.
+2. Copy only the sheets.
+3. Open the sheets folder and create a new txt file, paste the copied sheets, and save the text file.
+4. Give it a name so you can find it later in the GUI.
+5. Select your saved sheet to load it into the text box.
 
-Your saved sheets can be managed through the library in the application.
+Your saved sheets can be managed in the sheets folder of the folder.
 
 ### Supported Notation
 
