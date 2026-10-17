@@ -2,7 +2,7 @@
 
 A lightweight AutoHotkey script for playing Virtual Piano sheets in Roblox.
 
-**Conputed's Virtual Piano Autoplayer** lets you play sheet music using your own keyboard. It supports notes, chords, customizable settings, and a built-in sheet library where you can save and manage your favorite songs.
+**Conputed's Virtual Piano Autoplayer (CVP Autoplayer)** lets you play sheet music using your own keyboard. It supports notes, chords, customizable settings, and a sheet library where you can save and manage your favorite songs.
 
 Unlike a fully automatic player, this tool uses **manual autoplay** — you control when notes and chords are played, so a little timing and coordination are involved.
 
@@ -10,25 +10,34 @@ Unlike a fully automatic player, this tool uses **manual autoplay** — you cont
 
 **[Download the latest release](../../releases/latest)**
 
-**This is the recommended and official way to download the Autoplayer.**
+This is the recommended and official way to download the Autoplayer.
 
 1. Open the [latest release](../../releases/latest).
 2. Find the ZIP file under **Assets**.
-3. Click the ZIP file to download it.
-4. Extract the ZIP file to a folder on your computer.
+3. Download the ZIP file and extract it to a folder on your computer.
 
 > **Important:** Do not use **Code → Download ZIP** for the normal installation. That option downloads the entire source repository, including documentation and screenshots. Download the ZIP attached to a release instead.
 
 ### What's Included?
 
-The release ZIP is intended to contain the files needed to run the Autoplayer:
+The release ZIP should contain the files required to run the Autoplayer:
 
 - **The `.ahk` script** — the main application.
-- **The `sheets` folder** — for storing and managing your Virtual Piano sheets, if included in the release.
+- **The `sheets` folder** — for storing your Virtual Piano sheets, if included in the release.
 
-The release package does not need to include the repository's `README.md` or `screenshots` folder.
+The repository's `README.md` and `screenshots` folder are for documentation and do not need to be included in the release ZIP.
 
-Before publishing a release, make sure its ZIP contains the script and any required supporting files. The exact contents depend on the files included in that release.
+Before publishing a release, make sure the ZIP contains the script and any required supporting files.
+
+## Demo Video
+
+See CVP Autoplayer in action playing **"Haggstorm" with the default settings**.
+
+[![Watch the CVP Autoplayer demo — Haggstorm](https://img.youtube.com/vi/ATZdFc9jGss/hqdefault.jpg)](https://www.youtube.com/watch?v=ATZdFc9jGss)
+
+**[▶ Watch the demo on YouTube](https://www.youtube.com/watch?v=ATZdFc9jGss)**
+
+More videos, including installation instructions and a tutorial on adding sheets correctly, will be added here.
 
 ## Screenshots
 
@@ -142,6 +151,13 @@ The Autoplayer includes options for adjusting playback to your preference.
 Experiment with these options to find what works best for your sheet and the game you're playing.
 
 Your settings are saved automatically, so you shouldn't need to configure them every time you launch the script.
+
+## Tutorials
+
+Additional video tutorials will be added here as they become available.
+
+- **Installation tutorial:** Coming soon.
+- **How to add sheets correctly:** Coming soon.
 
 ## Troubleshooting
 
