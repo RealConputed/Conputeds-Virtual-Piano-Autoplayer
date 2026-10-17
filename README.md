@@ -2,19 +2,33 @@
 
 A lightweight AutoHotkey script for playing Virtual Piano sheets in Roblox.
 
-**Conputed's Virtual Piano Autoplayer** lets you play sheet music using your own keyboard. It supports notes, chords, custom settings, and a built-in sheet library where you can save and manage your favorite songs.
+**Conputed's Virtual Piano Autoplayer** lets you play sheet music using your own keyboard. It supports notes, chords, customizable settings, and a built-in sheet library where you can save and manage your favorite songs.
 
 Unlike a fully automatic player, this tool uses **manual autoplay** — you control when notes and chords are played, so a little timing and coordination are involved.
+
+## Screenshots
+
+### Main GUI
+
+The main interface, where you can load sheets and control playback.
+
+![Main GUI](screenshots/main.png)
+
+### Settings GUI
+
+The settings interface, where you can customize playback behavior.
+
+![Settings GUI](screenshots/settings.png)
 
 ## Features
 
 - **Manual playback** — trigger notes and chords with a single hotkey.
 - **Sheet library** — save and manage your own piano sheets.
-- **Customizable controls** — adjust the hotkeys and playback settings.
+- **Customizable controls** — adjust hotkeys and playback settings.
 - **Chord support** — play multiple notes together.
 - **Timing options** — customize note start and release timing.
 - **Note breaks** — optionally support breaks in compatible sheets.
-- **Persistent settings** — your preferences are saved between sessions.
+- **Saved settings** — your preferences persist between sessions.
 - **Simple interface** — manage playback and sheets through a clean GUI.
 
 ## Getting Started
@@ -25,72 +39,74 @@ This script requires **AutoHotkey v2 for Windows**.
 
 Download it from the official website:
 
-[Download AutoHotkey](https://www.autohotkey.com/)
+[**Download AutoHotkey v2**](https://www.autohotkey.com/)
 
 Make sure you install **version 2**, not version 1.
 
 ### 2. Download the Autoplayer
 
-1. Scroll to the top of this repository.
+1. Open this repository on GitHub.
 2. Click the green **Code** button.
 3. Select **Download ZIP**.
-4. Extract the downloaded ZIP file to a folder on your computer.
+4. Extract the ZIP file to a folder on your computer.
 
 ### 3. Launch the Script
 
 1. Open the extracted folder.
 2. Find the `.ahk` script file.
-3. Double-click it to launch the application.
+3. Double-click it to launch the Autoplayer.
 
-If Windows asks which application should open the file, make sure AutoHotkey v2 is installed.
+If the script does not open, check that AutoHotkey v2 is installed correctly.
 
-### 4. Open Virtual Piano
+### 4. Open Roblox
 
-Open Roblox and enter a game that supports Virtual Piano. Make sure the piano is ready to receive keyboard input.
-
-Keep the game open while using the Autoplayer.
+1. Launch Roblox and enter a game that supports Virtual Piano.
+2. Make sure the piano is ready to receive keyboard input.
+3. Keep the game open while using the Autoplayer.
 
 ## Controls
 
-| Default key | Action |
+| Default Key | Action |
 | --- | --- |
 | `]` | Play the next note or chord |
 | `\` | Enter or leave the autoplay state |
 
-The `]` key triggers the next part of the sheet. Depending on the notation, this may be a single note or a chord.
+The `]` key triggers the next part of the sheet. Depending on the notation, this may be a single note or multiple notes played together as a chord.
 
 **Tip:** Start with a short, simple sheet to get used to the timing before trying more complicated songs.
 
 ## Using Your Own Sheets
 
-You can use your own Virtual Piano sheet text and save sheets in the built-in library.
+You can add your own Virtual Piano sheets by saving them as `.txt` files in the `sheets` folder.
 
 ### Adding a Sheet
 
 1. Find a Virtual Piano sheet you want to play.
-2. Copy only the sheets.
-3. Open the sheets folder and create a new txt file, paste the copied sheets, and save the text file.
-4. Give it a name so you can find it later in the GUI.
-5. Select your saved sheet to load it into the text box.
+2. Copy the sheet notation.
+3. Open the `sheets` folder inside the Autoplayer's folder.
+4. Create a new text file ending in `.txt`.
+5. Paste the sheet notation into the file and save it.
+6. Give the file a recognizable name, such as `song.txt`.
+7. Open the Autoplayer and select your saved sheet from the library to load it into the text box.
 
-Your saved sheets can be managed in the sheets folder of the folder.
+Your saved sheets remain in the `sheets` folder, so you can add, edit, or remove them whenever you want.
 
-### Supported Notation
+## Supported Notation
 
 The Autoplayer recognizes the following notation:
 
-- **Single notes:** individual characters from a sheet.
-- **Chords:** notes grouped inside square brackets, such as `[adg]`.
-- **Spacing:** spaces, line breaks, tabs, and slashes are skipped.
+- **Single notes:** Individual characters from a Virtual Piano sheet.
+- **Chords:** Notes grouped inside square brackets, such as `[adg]`.
+- **Spacing:** Spaces, line breaks, tabs, and slashes are skipped.
 - **Note breaks:** `-`, `_`, and `|` can represent breaks when note-break support is enabled.
 
-Not every sheet uses exactly the same format. If a sheet plays incorrectly, check its notation and whether its settings match the sheet.
+Not every sheet uses exactly the same format. If a sheet plays incorrectly, check its notation and make sure your settings match the sheet.
 
 ## Settings
 
 The Autoplayer includes options for adjusting playback to your preference.
 
-| Setting | Default | What it does |
+| Setting | Default | Description |
 | --- | --- | --- |
 | Support note breaks | Off | Enables break markers in compatible sheets. |
 | Realistic chord start | On | Adds small timing variations when starting chord notes. |
@@ -98,33 +114,33 @@ The Autoplayer includes options for adjusting playback to your preference.
 | Maximum start delay | 8 ms | Sets the maximum randomized start delay. |
 | Maximum release delay | 40 ms | Sets the maximum randomized release delay. |
 
-You can experiment with these options to find what works best for your sheet and game.
+Experiment with these options to find what works best for your sheet and the game you're playing.
 
 Your settings are saved automatically, so you shouldn't need to configure them every time you launch the script.
 
 ## Troubleshooting
 
-**The script won't open.**
+### The script won't open
+
 - Make sure AutoHotkey v2 is installed.
 - Confirm that you're running the `.ahk` file and not opening it in a text editor.
 
-**The notes aren't playing in Roblox.**
+### Notes aren't playing in Roblox
+
 - Make sure the correct Roblox game is open and the piano is ready.
 - Check that the game is receiving keyboard input.
-- Confirm that the Autoplayer's hotkeys match your current settings.
+- Confirm that the Autoplayer is running and your hotkeys are configured correctly.
 
-**A sheet plays incorrectly.**
+### A sheet plays incorrectly
+
 - Check that the sheet uses compatible Virtual Piano notation.
 - Make sure chord brackets and note breaks are formatted correctly.
 - Try a short test sheet to narrow down the problem.
 
-**A note or chord stays held.**
+### A note or chord stays held
+
 - Release the note hotkey and stop playback if necessary.
 - If the problem continues, restart the script and check whether it happens consistently.
-
-## Screenshots
-
-Screenshots of the interface and sheet library will be added here.
 
 ## Credits
 
