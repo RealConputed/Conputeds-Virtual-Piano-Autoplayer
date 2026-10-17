@@ -6,6 +6,30 @@ A lightweight AutoHotkey script for playing Virtual Piano sheets in Roblox.
 
 Unlike a fully automatic player, this tool uses **manual autoplay** — you control when notes and chords are played, so a little timing and coordination are involved.
 
+## Download
+
+**[Download the latest release](../../releases/latest)**
+
+**This is the recommended and official way to download the Autoplayer.**
+
+1. Open the [latest release](../../releases/latest).
+2. Find the ZIP file under **Assets**.
+3. Click the ZIP file to download it.
+4. Extract the ZIP file to a folder on your computer.
+
+> **Important:** Do not use **Code → Download ZIP** for the normal installation. That option downloads the entire source repository, including documentation and screenshots. Download the ZIP attached to a release instead.
+
+### What's Included?
+
+The release ZIP is intended to contain the files needed to run the Autoplayer:
+
+- **The `.ahk` script** — the main application.
+- **The `sheets` folder** — for storing and managing your Virtual Piano sheets, if included in the release.
+
+The release package does not need to include the repository's `README.md` or `screenshots` folder.
+
+Before publishing a release, make sure its ZIP contains the script and any required supporting files. The exact contents depend on the files included in that release.
+
 ## Screenshots
 
 ### Main GUI
@@ -43,12 +67,12 @@ Download it from the official website:
 
 Make sure you install **version 2**, not version 1.
 
-### 2. Download the Autoplayer
+### 2. Download and Extract
 
-1. Open this repository on GitHub.
-2. Click the green **Code** button.
-3. Select **Download ZIP**.
-4. Extract the ZIP file to a folder on your computer.
+1. Open the [latest release](../../releases/latest).
+2. Download the ZIP file listed under **Assets**.
+3. Right-click the downloaded ZIP file.
+4. Select **Extract All** and choose where you want to keep the Autoplayer.
 
 ### 3. Launch the Script
 
@@ -81,15 +105,16 @@ You can add your own Virtual Piano sheets by saving them as `.txt` files in the 
 
 ### Adding a Sheet
 
-1. Find a Virtual Piano sheet you want to play.
-2. Copy the sheet notation.
-3. Open the `sheets` folder inside the Autoplayer's folder.
-4. Create a new text file ending in `.txt`.
-5. Paste the sheet notation into the file and save it.
-6. Give the file a recognizable name, such as `song.txt`.
-7. Open the Autoplayer and select your saved sheet from the library to load it into the text box.
+1. Open the Autoplayer's `sheets` folder.
+2. Find a Virtual Piano sheet you want to play and copy its notation.
+3. Create a new text file ending in `.txt`.
+4. Paste the sheet notation into the file and save it.
+5. Give the file a recognizable name, such as `song.txt`.
+6. Open the Autoplayer and select your saved sheet from the library to load it into the text box.
 
 Your saved sheets remain in the `sheets` folder, so you can add, edit, or remove them whenever you want.
+
+If the release ZIP does not contain a `sheets` folder, check whether the application creates it automatically before creating one manually.
 
 ## Supported Notation
 
@@ -124,6 +149,7 @@ Your settings are saved automatically, so you shouldn't need to configure them e
 
 - Make sure AutoHotkey v2 is installed.
 - Confirm that you're running the `.ahk` file and not opening it in a text editor.
+- Make sure you extracted the release ZIP before running the script.
 
 ### Notes aren't playing in Roblox
 
@@ -141,6 +167,12 @@ Your settings are saved automatically, so you shouldn't need to configure them e
 
 - Release the note hotkey and stop playback if necessary.
 - If the problem continues, restart the script and check whether it happens consistently.
+
+### I can't find the sheets folder
+
+- Check the folder where you extracted the release ZIP.
+- If the folder isn't included, check whether the application creates it automatically.
+- Make sure you're editing the folder used by the running copy of the Autoplayer.
 
 ## Credits
 
